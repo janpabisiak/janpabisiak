@@ -9,7 +9,7 @@
 
 - ♥ I'm keen on coding, philosophy, reading books, electronic music and bicycle touring 
 
-- Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
+- 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
 
 - 📫 How to reach me **contact@janpabisiak.com**
 
