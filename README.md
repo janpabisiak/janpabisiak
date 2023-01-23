@@ -7,6 +7,8 @@
 
 - 💬 Ask me about **HTML, CSS (I know a lot about syntax but my designs suck ;D), PHP**
 
+- ♥ I'm keen on coding, philosophy, reading books, electronic music and bicycle touring 
+
 - 📫 How to reach me **contact@janpabisiak.com**
 
 <a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://www.codewars.com/users/janpabisiak/badges/large"></a>
