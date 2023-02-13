@@ -5,7 +5,7 @@
 
 - 👯 I’m looking to collaborate on fun projects 😄
 
-- 💬 Ask me about **HTML, CSS, Javascript, NPM, GIT**
+- 💬 Ask me about **HTML, CSS, JavaScript, NPM, GIT**
 
 - ♥ I'm keen on coding, philosophy, reading books, electronic music and bicycle touring 
 
