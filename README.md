@@ -14,5 +14,3 @@
 - 📫 How to reach me: **contact@janpabisiak.com**
 
 <a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://www.codewars.com/users/janpabisiak/badges/large"></a>
-<a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://docs.codewars.com/logo.svg" width="50px"></a>
-<a href="https://www.sololearn.com/profile/20788254"><img alt="sololearn logo" src="https://blob.sololearn.com/avatars/sololearn.png" width="50px"></a>
