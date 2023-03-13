@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **HTML, CSS, JavaScript, NPM, GIT**
 
-- ♥ I'm keen on coding, philosophy, reading books, electronic music and bicycle touring 
+- ♥ I'm keen on coding, philosophy, reading books, video games, electronic music and bicycle touring 
 
 - 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
 
