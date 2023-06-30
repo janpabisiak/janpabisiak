@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Jan</h1>
 <h3 align="center">A passionate of Technology and Computer Science</h3>
 
-- 🌱 I’m currently learning **Node.js, SQL**
+- 🌱 I’m currently learning **Node.js, MongoDB**
 
 - 👯 I’m looking to collaborate on fun projects 😄
 
-- 💬 Ask me about **HTML, CSS, JavaScript, NPM, GIT**
+- 💬 Languages and tools that I have used: **HTML, CSS, JavaScript, Python, NPM, MySQL, GIT, Parcel**
 
 - ♥ I'm keen on coding, philosophy, reading books, video games, electronic music and bicycle touring 
 
