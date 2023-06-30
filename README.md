@@ -7,7 +7,7 @@
 
 - 💬 Languages and tools that I have used: **HTML, CSS, JavaScript, Python, NPM, MySQL, GIT, Parcel**
 
-- ♥ I'm keen on coding, reading non-fiction books, electronic music and bicycle touring 
+- ♥ I'm keen on coding, non-fiction books, electronic music and bicycle touring 
 
 - 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
 
