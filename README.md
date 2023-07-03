@@ -11,6 +11,6 @@
 
 - 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
 
-- 📫 How to reach me: **contact@janpabisiak.com**
+- 📫 My Discord: pabinsky
 
 <a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://www.codewars.com/users/janpabisiak/badges/large"></a>
