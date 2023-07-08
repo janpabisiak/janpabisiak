@@ -8,14 +8,17 @@
     <meta name="author" content="Jan Pabisiak">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
+    <script src="assets/scripts/script.js" defer></script>
 </head>
 
 <body>
-    <header class="sticky">
-        <h1 class="logo"><span id="logo"><a href="https://janpabisiak.com">Jan Pabisiak</a></span></h1>
+    <div class="loading-container">
+        <div class="loading"></div>
+    </div>
+    <header class="sticky hidden">
+        <a href="https://janpabisiak.com" class="logo">Jan Pabisiak</a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -25,7 +28,7 @@
             </ul>
         </nav>
     </header>
-    <section id="home">
+    <section id="home" class="hidden">
         <h1 class="hero-title">Coding solutions, one line of code at a time</h1>
         <p class="hero-content">Welcome to my personal website. Make yourself at home and grab a drink.</p>
         <div class="hero-buttons">
@@ -33,21 +36,30 @@
             <a href="#contact" class="btn">Contact</a>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="hidden">
         <div class="about-texts">
             <h2 class="about-title">About me</h2>
-            <p>Hey, my name is Jan Pabisiak and I'm 19 years old. My first app was written in PHP. It was a binary to text encoder. I was seriously proud of myself, and that's how my whole coding journey started. A few years later, you are looking at my personal website.</p>
-            <p>Apart from my love for computers, I'm also keen on philosophy, reading, electronic music, and bicycle touring.</p>
+            <p>Hey, my name is Jan Pabisiak and I'm 19 years old. My first app was written in PHP. It was a binary-to-text encoder. I was seriously proud of myself, and that's how my whole coding journey started. A few years later, you are looking at my personal website.</p>
+            <p>Besides my love for computers, I'm also keen on philosophy, reading, electronic music, and bicycle touring.</p>
         </div>
-        <img src="https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/347245327_781250140167242_6652425303570755284_n.jpg?_nc_cat=104&cb=99be929b-3346023f&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mWsnpmFaNMcAX9n8Nis&_nc_ht=scontent-ham3-1.xx&oh=00_AfD6k0S1dcMTrhjawa3W-bb2MHqmcQHKcGexuEnLb1_iPA&oe=64932242" alt="myself">
+        <img src="assets/images/me.webp" alt="myself">
     </section>
-    <section id="projects">
+    <section id="projects" class="hidden">
         <h2 class="about-title">Projects</h2>
         <div class="project-cards">
             <div class="project">
+                <h2 class="project-title">Weather App</h2>
+                <p>A weather app written in JavaScript with MVC.</p>
+                <img src="assets/images/projects/weather-app.webp" alt="">
+                <div class="project-buttons">
+                    <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
+                    <a href="https://janpabisiak.github.io/weather-app/" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project">
                 <h2 class="project-title">Tic Tac Toe</h2>
                 <p>A simple Tic Tac Toe game implemented in JavaScript.</p>
-                <img src="https://raw.githubusercontent.com/janpabisiak/tic-tac-toe/main/screenshot.PNG" alt="">
+                <img src="assets/images/projects/tic-tac-toe.webp" alt="">
                 <div class="project-buttons">
                     <a href="https://github.com/janpabisiak/tic-tac-toe" class="btn btn-secondary">Source Code</a>
                     <a href="https://janpabisiak.github.io/tic-tac-toe/" class="btn">Live Demo</a>
@@ -55,8 +67,8 @@
             </div>
             <div class="project">
                 <h2 class="project-title">Portfolio Website</h2>
-                <p>Have you ever watched the movie named "Inception"?</p>
-                <img src="portfolio.PNG" alt="">
+                <p>Have you ever watched a movie called "Inception"?</p>
+                <img src="assets/images/projects/portfolio.webp" alt="">
                 <div class="project-buttons">
                     <a href="https://github.com/janpabisiak/janpabisiak" class="btn btn-secondary">Source Code</a>
                     <a href="#" class="btn">Live Demo</a>
@@ -64,10 +76,10 @@
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
         <div class="contact-texts">
             <h2 class="about-title">Get in touch</h2>
-            <p>Contact me if you want to offer me a job, collaborate with me, or even send a beautiful valentine's card. Make your decision!</p>
+            <p>Contact me if you want to offer me a job, collaborate with me, or even send a beautiful Valentine's card. Make your decision!</p>
         </div>
         <ul>
             <li>
@@ -104,8 +116,8 @@
             </li>
         </ul>
     </section>
-    <footer>
-        <p>&copy; <span class="year"></span> Jan Pabisiak</p>
+    <footer class="hidden">
+        <p>Copyright &copy; <span class="year"></span> Jan Pabisiak</p>
     </footer>
 </body>
 
