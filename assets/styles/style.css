@@ -345,6 +345,7 @@ footer {
 	header {
 		background-color: #212529;
 		border-top: 0;
+		padding: 1rem 2rem;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	}
 
@@ -420,7 +421,7 @@ footer {
 
 	#contact {
 		grid-template-columns: 1fr;
-		padding: 3rem 10rem;
+		padding: 3rem 3rem;
 		gap: 2rem;
 	}
 }
