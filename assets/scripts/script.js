@@ -9,6 +9,20 @@ window.onload = () => {
 	document.querySelector('footer').classList.remove('hidden');
 };
 
+// toggle menu button
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.navbar-links');
+
+toggleButton.addEventListener('click', (e) => {
+	e.preventDefault();
+	navbarLinks.classList.toggle('active');
+});
+
+// fix contact link in nav
+if (window.innerWidth < 768) {
+	document.querySelector('.contact-link').classList.remove('btn');
+}
+
 // load email
 setTimeout(() => {
 	const emailLinkEl = document.querySelector('#email');
