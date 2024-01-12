@@ -5,7 +5,7 @@
 
 - 👯 I’m looking to collaborate on fun projects 😄
 
-- 💬 Languages and tools that I have used: **HTML, CSS, JavaScript, Python, NPM, MySQL, GIT, Parcel**
+- 💬 Languages and tools that I have used: **HTML, CSS, JavaScript, Python, NPM, PHP, MySQL, GIT, Parcel**
 
 - ♥ I'm keen on coding, non-fiction books, electronic music and bicycle touring 
 
