@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Node.js, Express, React, C++**
 
-- 👯 I’m looking to collaborate on fun projects 😄
+- 👯 I’m looking to collaborate on interesting and innovative projects 😄
 
 - 💬 Languages and tools that I have used: **HTML, CSS, JavaScript, Python, NPM, PHP, MySQL, GIT, Parcel**
 
