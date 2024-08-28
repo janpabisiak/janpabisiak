@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Jan</h1>
 <h3 align="center">A passionate of Technology and Computer Science</h3>
 
-- 🌱 I’m currently learning **Node.js, Express, React, C++**
+- 🌱 I’m currently learning **Node.js, Express, React, Java, C++**
 
 - 👯 I’m looking to collaborate on interesting and innovative projects 😄
 
