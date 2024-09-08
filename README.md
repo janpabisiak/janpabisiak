@@ -13,6 +13,8 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
+### More about me
+
 - 👯 I’m looking to collaborate on interesting and innovative projects 😄
 
 - ♥ I'm keen on coding, non-fiction books, podcasts, electronic music, and bicycle touring 
