@@ -15,7 +15,7 @@
 
 - 👯 I’m looking to collaborate on interesting and innovative projects 😄
 
-- ♥ I'm keen on coding, non-fiction books, podcasts, electronic music and bicycle touring 
+- ♥ I'm keen on coding, non-fiction books, podcasts, electronic music, and bicycle touring 
 
 - 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
 
