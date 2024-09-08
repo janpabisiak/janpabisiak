@@ -1,7 +1,8 @@
 <h1 align="center">Hi there 👋, I'm Jan</h1>
 <h3 align="center">A passionate of Technology and Computer Science Student</h3>
 
-### Languages and tools
+<h3 align="center">Languages and tools</h3>
+
 There are some technologies I have used in my recent projects.
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -15,7 +16,7 @@ There are some technologies I have used in my recent projects.
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-### More about me
+<h3 align="center">More about me</h3>
 
 - 👯 I’m looking to collaborate on interesting and innovative projects 😄
 
