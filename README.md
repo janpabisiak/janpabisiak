@@ -25,6 +25,6 @@ There are some technologies I have used in my recent projects.
 
 - 📫 My Discord: pabinsky
 
-<h3 align="center">Social media</h3>
+<h3 align="center">Other public profiles</h3>
 <p align="center">Check out my Codewars profile. I like to solve programming problems on this platform in my free time.</p>
 <h3 align="center"><a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://www.codewars.com/users/janpabisiak/badges/large"></a></h3>
