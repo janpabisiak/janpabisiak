@@ -1,0 +1,23 @@
+{
+	"name": "janpabisiak",
+	"version": "1.0.0",
+	"description": "<h1 align=\"center\">Hi there 👋, I'm Jan</h1>",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/janpabisiak/janpabisiak.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/janpabisiak/janpabisiak/issues"
+	},
+	"homepage": "https://github.com/janpabisiak/janpabisiak#readme",
+	"devDependencies": {
+		"parcel": "^2.12.0"
+	}
+}

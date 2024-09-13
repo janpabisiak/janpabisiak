@@ -9,14 +9,18 @@
     <meta name="author" content="Jan P. Pabisiak">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.webp">
-    <script src="assets/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.webp">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="./assets/script.js" defer></script>
 </head>
+
 <body>
     <div class="loading-container">
         <div class="loading"></div>
     </div>
+    <div class="percContentToScroll"></div>
+    <div class="percOfScrolledContent"></div>
     <header class="hidden">
         <nav class="navbar">
             <a href="https://janpabisiak.com" class="logo">Jan Pabisiak</a>
@@ -29,63 +33,113 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact" class="btn contact-link">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./assets/cv.pdf" class="btn">Download CV</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section id="home" class="hidden">
-        <h1 class="hero-title">Coding solutions, one line of code at a time</h1>
+        <h1 class="hero-title">Reliable coding solutions at your fingertips</h1>
         <p class="hero-content">Welcome to my personal website. Make yourself at home and grab a drink.</p>
         <div class="hero-buttons">
-            <a href="#projects" class="btn btn-secondary">Projects</a>
+            <a href="#projects" class="btn btn-secondary">Portfolio</a>
             <a href="#contact" class="btn">Contact</a>
         </div>
     </section>
     <section id="about" class="hidden">
-        <div class="about-texts">
-            <h2 class="about-title">About me</h2>
-            <p>Hey, my name is Jan P. Pabisiak and I'm 19 years old. My first app was written in PHP. It was a binary-to-text encoder. I was seriously proud of myself, and that's how my whole coding journey started. A few years later, you are looking at my personal website.</p>
-            <p>Besides my love for computers, I'm also keen on philosophy, reading, electronic music, and bicycle touring.</p>
-        </div>
         <img src="assets/images/me.webp" width="100%" height="100%" alt="Photo of Jan Pabisiak">
+        <div class="about-texts">
+            <h2 class="section-title">About me</h2>
+            <p>Hello there! My name is Jan P. Pabisiak and I'm <span class="age">20</span> years old computer science student @ UŁ. I always wanted to give life to my ideas and by coding I find incredible good way to do it. My journey with information technology have started many years ago when I built my first application. It was a simple binary-to-text encoder written in PHP. It wasn't much but that day I felt like a hero and have decided to dedicate my life to increase my skills in this branch.
+            <p>Today, coding websites and web apps is addictive activity for me and many times I woke up from my trance in the mid of the night, after even 8 hours of constant building my projects.</p>
+            <p>Besides my undisputed love for computers, I'm also seriously enjoying reading, listening to hard electronic music, and long bicycle touring.</p>
+        </div>
+    </section>
+    <section id="skills" class="hidden">
+        <h2 class="section-title">My skills</h2>
+        <div class="skills">
+            <p class="skill-badge">HTML</p>
+            <p class="skill-badge">CSS</p>
+            <p class="skill-badge">JavaScript</p>
+            <p class="skill-badge">TypeScript</p>
+            <p class="skill-badge">React</p>
+            <p class="skill-badge">React Router</p>
+            <p class="skill-badge">Node.js</p>
+            <p class="skill-badge">Express.js</p>
+            <p class="skill-badge">MongoDB</p>
+            <p class="skill-badge">SQL</p>
+            <p class="skill-badge">Git/GitHub</p>
+        </div>
     </section>
     <section id="projects" class="hidden">
-        <h2 class="about-title">Projects</h2>
+        <h2 class="section-title">Portfolio</h2>
         <div class="project-cards">
             <div class="project">
-                <h2 class="project-title">Weather App</h2>
-                <p>A weather app written in JavaScript with MVC.</p>
-                <img src="assets/images/projects/weather-app.webp" width="100%" height="220px" alt="Weather App project screenshot">
-                <div class="project-buttons">
-                    <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
-                    <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
+                <img src="./assets/images/projects/justbucks.webp" width="100%" height="220px" alt="Weather App project screenshot">
+                <div class="project-details">
+                    <h2 class="project-title">JustBucks</h2>
+                    <div class="project-skills">
+                        <p class="skill-badge">HTML</p>
+                        <p class="skill-badge">CSS</p>
+                        <p class="skill-badge">JavaScript</p>
+                        <p class="skill-badge">React</p>
+                        <p class="skill-badge">React Router</p>
+                        <p class="skill-badge">GIT</p>
+                        <p class="skill-badge">Vite</p>
+                    </div>
+                    <p>JustBucks is a user-friendly, web-based personal finance management tool designed to help individuals track their income, expenses, and overall financial health. With an intuitive interface, JustBucks provides clear visualizations of spending habits, allowing users to make informed financial decisions.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
+                        <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
+                    </div>
                 </div>
             </div>
             <div class="project">
-                <h2 class="project-title">Tic Tac Toe</h2>
-                <p>A simple Tic Tac Toe game implemented in JavaScript.</p>
-                <img src="assets/images/projects/tic-tac-toe.webp" width="100%" height="220px" alt="Tic Tac Toe project screenshot">
-                <div class="project-buttons">
-                    <a href="https://github.com/janpabisiak/tic-tac-toe" class="btn btn-secondary">Source Code</a>
-                    <a href="https://tic-tac-toe.janpabisiak.com" class="btn">Live Demo</a>
+                <div class="project-details">
+                    <h2 class="project-title">Weather App</h2>
+                    <div class="project-skills">
+                        <p class="skill-badge">HTML</p>
+                        <p class="skill-badge">CSS</p>
+                        <p class="skill-badge">JavaScript</p>
+                        <p class="skill-badge">GIT</p>
+                        <p class="skill-badge">MVC</p>
+                        <p class="skill-badge">Parcel</p>
+                    </div>
+                    <p>A weather app written in JavaScript with MVC. By connecting with external API display weather forecast for every place in the world. Application can fetch user location when get the permission to do it and also store history of locations searched by user.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
+                        <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
+                    </div>
                 </div>
+                <img src="./assets/images/projects/weather-app.webp" width="100%" height="220px" alt="Weather App project screenshot">
             </div>
             <div class="project">
-                <h2 class="project-title">Portfolio Website</h2>
-                <p>Have you ever watched a movie called "Inception"?</p>
-                <img src="assets/images/projects/portfolio.webp" width="100%" height="220px" alt="Portfolio website screenshot">
-                <div class="project-buttons">
-                    <a href="https://github.com/janpabisiak/janpabisiak" width="100%" height="220px" class="btn btn-secondary">Source Code</a>
-                    <a href="#" class="btn">Live Demo</a>
+                <img src="./assets/images/projects/tic-tac-toe.webp" width="100%" height="220px" alt="Weather App project screenshot">
+                <div class="project-details">
+                    <h2 class="project-title">Tic Tac Toe</h2>
+                    <div class="project-skills">
+                        <p class="skill-badge">HTML</p>
+                        <p class="skill-badge">CSS</p>
+                        <p class="skill-badge">JavaScript</p>
+                        <p class="skill-badge">GIT</p>
+                        <p class="skill-badge">OOP</p>
+                        <p class="skill-badge">Parcel</p>
+                    </div>
+                    <p>A computer implementation of popular 1v1 game coded in vanilla JavaScript. There is two ways to play: 2 players and player versus computer.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
+                        <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="contact" class="hidden">
         <div class="contact-texts">
-            <h2 class="about-title">Get in touch</h2>
+            <h2 class="section-title">Get in touch</h2>
             <p>Contact me if you want to offer me a job, collaborate with me, or even send a beautiful Valentine's card. Make your decision!</p>
         </div>
         <ul>
