@@ -2,7 +2,6 @@
 	"name": "janpabisiak",
 	"version": "1.0.0",
 	"description": "<h1 align=\"center\">Hi there 👋, I'm Jan</h1>",
-	"main": "index.js",
 	"scripts": {
 		"dev": "parcel index.html",
 		"build": "parcel build index.html"
