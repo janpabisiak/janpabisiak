@@ -141,7 +141,7 @@ footer {
 }
 
 .percContentToScroll,
-.percOfScrolledContent {
+.percOfScrolled {
 	position: fixed;
 	top: 0;
 	height: 5px;
@@ -153,7 +153,7 @@ footer {
 	z-index: 2;
 }
 
-.percOfScrolledContent {
+.percOfScrolled {
 	width: 0%;
 	background-color: #3342ce;
 	z-index: 3;
@@ -507,6 +507,10 @@ footer {
 	.navbar-links ul li a {
 		color: #f8f9fa;
 		padding: 0.5rem 1rem;
+	}
+
+	a.active {
+		color: #f8f9fa !important;
 	}
 
 	#home {
