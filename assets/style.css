@@ -292,6 +292,7 @@ header {
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 10px;
 	transition: 300ms;
+	cursor: default;
 }
 
 .skill-badge:hover {
@@ -510,11 +511,23 @@ footer {
 
 	#home {
 		padding: 10rem 2rem;
+		min-height: auto;
 	}
 
 	.hero-title {
 		line-height: 1.2;
 		margin-bottom: 3rem;
+		max-width: 100%;
+		font-size: 4.8rem;
+	}
+
+	.hero-content {
+		margin-top: 0;
+	}
+
+	.hero-buttons {
+		display: flex;
+		flex-direction: column;
 	}
 
 	#about {
@@ -524,15 +537,21 @@ footer {
 
 	#skills {
 		padding: 3rem 3rem;
+		background: none;
 	}
 
 	#projects {
 		padding: 5rem 1rem;
+		background: none;
 	}
 
 	.project {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.project img {
+		display: none;
 	}
 
 	.project-buttons {
