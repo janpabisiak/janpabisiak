@@ -42,19 +42,21 @@
     </header>
     <section id="home" class="hidden">
         <h1 class="hero-title">Reliable coding solutions at your fingertips</h1>
-        <p class="hero-content">Welcome to my personal website. Make yourself at home and grab a drink.</p>
+        <p class="hero-content">Welcome to my creative space – relax, explore, and feel right at home. Grab a drink, and let's dive in together!</p>
         <div class="hero-buttons">
             <a href="#projects" class="btn btn-secondary">Portfolio</a>
             <a href="https://github.com/janpabisiak/janpabisiak/blob/main/assets/cv.pdf" class="btn">Download CV</a>
         </div>
     </section>
     <section id="about" class="hidden">
-        <img src="assets/images/me.webp" width="100%" height="100%" alt="Photo of Jan Pabisiak">
+        <div class="about-img">
+            <img src="assets/images/me.webp" alt="Photo of Jan Pabisiak">
+        </div>
         <div class="about-texts">
             <h2 class="section-title">About me</h2>
-            <p>Hello there! My name is Jan P. Pabisiak and I'm <span class="age">20</span> years old computer science student @ UŁ. I always wanted to give life to my ideas and by coding I find incredible good way to do it. My journey with information technology have started many years ago when I built my first application. It was a simple binary-to-text encoder written in PHP. It wasn't much but that day I felt like a hero and have decided to dedicate my life to increase my skills in this branch.
-            <p>Today, coding websites and web apps is addictive activity for me and many times I woke up from my trance in the mid of the night, after even 8 hours of constant building my projects.</p>
-            <p>Besides my undisputed love for computers, I'm also seriously enjoying reading, listening to hard electronic music, and long bicycle touring.</p>
+            <p>Hello! My name is Jan P. Pabisiak, and I’m a <span class="age">20</span>-year-old computer science student at the University of Łódź. I’ve always thought about bringing my ideas to life, and coding has become the perfect way for me to achieve this goal. My journey in computer programming began years ago when I built my first application. It was a simple binary-to-text encoder written in PHP. While it wasn’t much, that experience made me feel like a real hero, and from that day forward, I committed myself to honing my skills in this field.</p>
+            <p>Today, developing websites and web applications has become an addictive passion for me. There have been innumerable times when I’ve found myself intense in a coding trance, only realizing it’s the middle of the night after hours of working on my projects.</p>
+            <p>Outside of my love for programming, I also enjoy reading, listening to hard electronic music, and going on long-distance bike tours.</p>
         </div>
     </section>
     <section id="skills" class="hidden">
@@ -79,19 +81,48 @@
         <h2 class="section-title">Portfolio</h2>
         <div class="project-cards">
             <div class="project">
-                <img src="./assets/images/projects/justbucks.webp" width="100%" height="220px" alt="JustBucks project screenshot">
+                <div class="project-details">
+                    <h2 class="project-title">Meuka</h2>
+                    <div class="project-skills">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">Sass</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">React Router</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">JWT</span>
+                        <span class="skill-badge">GIT/GitHub</span>
+                        <span class="skill-badge">Vite</span>
+                    </div>
+                    <p>Meuka is a full-stack Ecommerce WebApp with a sleek interface. It features robust and secure authentication system, API-based interconnection, and structured product data management leveraging the power of the MERN stack. Built for scalability and immediate performance. Meuka provides a comprehensive simulation of real-life internet store.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
+                        <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-img">
+                    <img src="./assets/images/projects/meuka.webp" alt="Weather App project screenshot">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img">
+                    <img src="./assets/images/projects/justbucks.webp" alt="JustBucks project screenshot">
+                </div>
                 <div class="project-details">
                     <h2 class="project-title">JustBucks</h2>
                     <div class="project-skills">
-                        <p class="skill-badge">HTML</p>
-                        <p class="skill-badge">CSS</p>
-                        <p class="skill-badge">JavaScript</p>
-                        <p class="skill-badge">React</p>
-                        <p class="skill-badge">React Router</p>
-                        <p class="skill-badge">GIT</p>
-                        <p class="skill-badge">Vite</p>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">React Router</span>
+                        <span class="skill-badge">GIT/GitHub</span>
+                        <span class="skill-badge">Vite</span>
                     </div>
-                    <p>JustBucks is a user-friendly, web-based personal finance management tool designed to help individuals track their income, expenses, and overall financial health. With an intuitive interface, JustBucks provides clear visualizations of spending habits, allowing users to make informed financial decisions.</p>
+                    <p>JustBucks is a well-designed, web-based finance tool that helps personal tracking of incomes, expenses, and overall financial health. Its intuitive interface provides transparent visualizations of spending patterns, allowing users to make wiser financial choices. With budgeting tools and personalized insights, JustBucks supports goal-setting and empowers users to achieve financial stability.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/janpabisiak/JustBucks" class="btn btn-secondary">Source Code</a>
                         <a href="https://transaction-tracker-theta.vercel.app/" class="btn">Live Demo</a>
@@ -102,34 +133,38 @@
                 <div class="project-details">
                     <h2 class="project-title">Weather App</h2>
                     <div class="project-skills">
-                        <p class="skill-badge">HTML</p>
-                        <p class="skill-badge">CSS</p>
-                        <p class="skill-badge">JavaScript</p>
-                        <p class="skill-badge">GIT</p>
-                        <p class="skill-badge">MVC</p>
-                        <p class="skill-badge">Parcel</p>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">MVC</span>
+                        <span class="skill-badge">GIT/GitHub</span>
+                        <span class="skill-badge">Parcel</span>
                     </div>
-                    <p>A weather app written in JavaScript with MVC. By connecting with external API display weather forecast for every place in the world. Application can fetch user location when get the permission to do it and also store history of locations searched by user.</p>
+                    <p>This JavaScript-based weather app, built with the MVC architecture, provides real-time forecasts for any location worldwide via an external API. It auto-detects the user's location (when permission is granted) for rapid local updates and store search history for easy access to foregoing locations. With its responsive design and trouble-free data handling, the app ensures a user-friendly experience.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/janpabisiak/weather-app" class="btn btn-secondary">Source Code</a>
                         <a href="https://weather.janpabisiak.com" class="btn">Live Demo</a>
                     </div>
                 </div>
-                <img src="./assets/images/projects/weather-app.webp" width="100%" height="220px" alt="Weather App project screenshot">
+                <div class="project-img">
+                    <img src="./assets/images/projects/weather-app.webp" alt="Weather App project screenshot">
+                </div>
             </div>
             <div class="project">
-                <img src="./assets/images/projects/tic-tac-toe.webp" width="100%" height="220px" alt="Tic tac toe project screenshot">
+                <div class="project-img">
+                    <img src="./assets/images/projects/tic-tac-toe.webp" alt="Tic tac toe project screenshot">
+                </div>
                 <div class="project-details">
                     <h2 class="project-title">Tic Tac Toe</h2>
                     <div class="project-skills">
-                        <p class="skill-badge">HTML</p>
-                        <p class="skill-badge">CSS</p>
-                        <p class="skill-badge">JavaScript</p>
-                        <p class="skill-badge">GIT</p>
-                        <p class="skill-badge">OOP</p>
-                        <p class="skill-badge">Parcel</p>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">GIT/GitHub</span>
+                        <span class="skill-badge">OOP</span>
+                        <span class="skill-badge">Parcel</span>
                     </div>
-                    <p>A computer implementation of popular 1v1 game coded in vanilla JavaScript. There is two ways to play: 2 players and player versus computer.</p>
+                    <p>The JavaScript implementation of the classic, popular 1v1 game offers two modes: player vs. player and player vs. computer. The web app features a minimalist design and supports both light and dark themes, enhancing user experience. With simple and efficient code, the game delivers smooth functionality and an intuitive interface, making it accessible, trouble-free and entertaining for every user.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/janpabisiak/tic-tac-toe" class="btn btn-secondary">Source Code</a>
                         <a href="https://tic-tac-toe.janpabisiak.com/" class="btn">Live Demo</a>

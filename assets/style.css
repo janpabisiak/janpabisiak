@@ -86,7 +86,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	color: rgb(var(--color-white)) !important;
-	font-size: 16px;
+	font-size: 1.6rem;
 	background-color: rgb(var(--color-blue-primary));
 	padding: 1rem 5rem;
 	border-radius: 5px;
@@ -99,7 +99,7 @@ img {
 }
 
 .btn-secondary {
-	background: rgb(0, 0, 0, 0);
+	background: transparent;
 	color: rgb(var(--color-blue-primary)) !important;
 	border: 3px solid rgb(var(--color-blue-primary));
 }
@@ -189,6 +189,11 @@ header {
 .logo {
 	font-size: 3.2rem !important;
 	font-weight: 700 !important;
+	transition: 0.3s;
+}
+
+.logo:hover {
+	transform: rotate(2deg);
 }
 
 .navbar-links ul {
@@ -212,8 +217,8 @@ header {
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 30px;
-	height: 21px;
+	width: 3rem;
+	height: 2.1rem;
 }
 
 #home,
@@ -243,6 +248,8 @@ header {
 	padding: 1rem 0;
 	color: transparent;
 	background: url('https://i.gifer.com/origin/0c/0c22fcec9723a9839ae87b7b77c2ca85_w200.gif') top / cover no-repeat text;
+	position: relative;
+	z-index: 0;
 }
 
 .hero-content {
@@ -267,6 +274,17 @@ header {
 
 .section-title {
 	font-size: 4.8rem;
+}
+
+.about-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
 }
 
 .about-texts {
@@ -301,6 +319,7 @@ header {
 	background-color: transparent;
 	border-radius: 10px;
 	transition: 300ms;
+	margin-bottom: 0.3rem;
 	cursor: default;
 }
 
@@ -313,7 +332,6 @@ header {
 	align-items: center;
 	padding: 7rem 20rem;
 	gap: 3rem;
-	background: url('./images/blob2.svg') left / cover no-repeat;
 }
 
 .project-cards {
@@ -338,20 +356,26 @@ header {
 	transition: 300ms;
 }
 
-.project:nth-of-type(odd) {
+.project:nth-of-type(even) {
 	grid-template-columns: 40rem 1fr;
 }
 
-.project:nth-of-type(even) {
+.project:nth-of-type(odd) {
 	grid-template-columns: 1fr 40rem;
 }
 
-.project:nth-of-type(even) .project-buttons {
+.project:nth-of-type(odd) .project-buttons {
 	justify-content: flex-start;
 }
 
 .project:hover {
 	transform: translateY(-5px);
+}
+
+.project-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .project img {
@@ -398,7 +422,7 @@ header {
 }
 
 .list-icon {
-	width: 24px;
+	width: 2.4rem;
 	margin-right: 0.5rem;
 	fill: rgb(var(--color-blue-darker));
 }
@@ -572,5 +596,16 @@ footer {
 	#contact {
 		padding: 3rem;
 		gap: 2rem;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.project {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project img {
+		order: 0;
 	}
 }
