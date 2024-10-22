@@ -45,5 +45,5 @@
 </div>
 
 <h2 align="center">Find me on CodeWars</h2>
-<p align="center">Check out my CodeWars profile. I'm passionate about tackling programming problems on this platform in my free time.</p>
+<p align="center">Check out my CodeWars profile. I'm addicted to tackling coding problems on this platform in my free time.</p>
 <h3 align="center"><a href="https://www.codewars.com/users/janpabisiak"><img alt="codewars logo" src="https://www.codewars.com/users/janpabisiak/badges/large"></a></h3>
