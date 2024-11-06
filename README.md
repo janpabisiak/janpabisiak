@@ -24,6 +24,9 @@
   <a href="https://janpabisiak.com" target="_blank">
      <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
   </a>
+  <a href="https://www.codewars.com/users/janpabisiak" target="_blank">
+     <img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=grey" target="_blank" /> <!-- sqlite, safari, google-chrome are other good icon options -->
+  </a>
 </div>
 
 <h2 align="center">Languages, frameworks and tools</h2>
