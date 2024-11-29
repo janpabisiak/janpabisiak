@@ -356,15 +356,15 @@ header {
 	transition: 300ms;
 }
 
-.project:nth-of-type(even) {
+.project:nth-of-type(odd) {
 	grid-template-columns: 40rem 1fr;
 }
 
-.project:nth-of-type(odd) {
+.project:nth-of-type(even) {
 	grid-template-columns: 1fr 40rem;
 }
 
-.project:nth-of-type(odd) .project-buttons {
+.project:nth-of-type(even) .project-buttons {
 	justify-content: flex-start;
 }
 
