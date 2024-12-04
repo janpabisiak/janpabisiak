@@ -54,6 +54,19 @@ toggleButton.addEventListener('click', (e) => {
 
 window.innerWidth <= 768 ? navbarLinks[navbarLinks.length - 1].classList.remove('btn') : '';
 
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry, i) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('appear');
+			entry.target.style.animationDelay = `${i * 200}ms`;
+		}
+	});
+});
+
+document.querySelectorAll('.skills .skill-badge').forEach((el) => {
+	observer.observe(el);
+});
+
 const year = new Date().getFullYear();
 document.querySelector('.age').textContent = year - 2004;
 document.querySelector('.year').textContent = year;

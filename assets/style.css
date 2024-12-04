@@ -234,10 +234,30 @@ header {
 }
 
 #home {
+	background: url('./images/wave.svg') bottom / cover no-repeat;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: url('./images/wave.svg') bottom / cover no-repeat;
+	animation-name: fadeIn;
+	animation-duration: 1000ms;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 .hero-title {
@@ -323,8 +343,27 @@ header {
 	cursor: default;
 }
 
+.skills .skill-badge {
+	opacity: 0;
+}
+
 .skill-badge:hover {
 	transform: rotate(10deg);
+}
+
+.appear {
+	animation-name: appear;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 #projects {
@@ -443,7 +482,7 @@ footer {
 		padding: 1rem 5rem;
 	}
 
-	#home {
+	.hero {
 		padding: 10rem 2rem;
 	}
 
@@ -544,7 +583,7 @@ footer {
 		color: rgb(var(--color-white)) !important;
 	}
 
-	#home {
+	.hero {
 		padding: 10rem 2rem;
 		min-height: auto;
 	}
