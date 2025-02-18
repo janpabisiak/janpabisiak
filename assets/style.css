@@ -285,11 +285,16 @@ header {
 }
 
 #about {
+	padding: 7rem 30rem 10rem;
+}
+
+.about-container {
 	display: grid;
 	grid-template-columns: 30rem 1fr;
 	justify-content: center;
 	gap: 7rem;
-	padding: 7rem 30rem 10rem;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .section-title {
@@ -329,7 +334,8 @@ header {
 	justify-content: center;
 	gap: 1rem;
 	flex-wrap: wrap;
-	max-width: 90rem;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .skill-badge {
@@ -369,7 +375,7 @@ header {
 #projects {
 	display: flex;
 	align-items: center;
-	padding: 7rem 20rem;
+	padding: 7rem 0;
 	gap: 3rem;
 }
 
@@ -377,9 +383,10 @@ header {
 	display: grid;
 	gap: 2rem;
 	grid-template-columns: 1fr;
+	padding: 0 5rem;
 }
 
-#contact ul,
+.contact-container ul,
 .project-buttons {
 	gap: 1rem;
 	display: flex;
@@ -387,7 +394,8 @@ header {
 
 .project {
 	display: grid;
-	width: 75vw;
+	max-width: 1280px;
+	margin: 0 auto;
 	column-gap: 3rem;
 	padding: 3rem;
 	border-radius: 5px;
@@ -395,15 +403,15 @@ header {
 	transition: 300ms;
 }
 
-.project:nth-of-type(odd) {
+.project:nth-of-type(even) {
 	grid-template-columns: 40rem 1fr;
 }
 
-.project:nth-of-type(even) {
+.project:nth-of-type(odd) {
 	grid-template-columns: 1fr 40rem;
 }
 
-.project:nth-of-type(even) .project-buttons {
+.project:nth-of-type(odd) .project-buttons {
 	justify-content: flex-start;
 }
 
@@ -418,7 +426,8 @@ header {
 }
 
 .project img {
-	height: 250px;
+	object-fit: cover;
+	height: 240px;
 }
 
 .project-details {
@@ -443,18 +452,23 @@ header {
 }
 
 #contact {
+	padding: 5rem;
+}
+
+.contact-container {
+	max-width: 1280px;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 30rem;
 	gap: 10rem;
-	padding: 5rem 20rem;
 }
 
-#contact ul {
+.contact-container ul {
 	flex-direction: column;
 	align-items: flex-start;
 }
 
-#contact a {
+.contact-container a {
 	display: flex;
 	justify-content: center;
 	color: rgb(var(--color-blue-darker));
@@ -466,7 +480,7 @@ header {
 	fill: rgb(var(--color-blue-darker));
 }
 
-#contact a:hover,
+.contact-container a:hover,
 .list-icon:hover {
 	fill: #2935a5;
 	color: #2935a5;
@@ -492,7 +506,7 @@ footer {
 	}
 
 	#about {
-		padding: 5rem 3rem;
+		padding: 5rem 5rem;
 		gap: 3rem;
 	}
 
@@ -519,9 +533,9 @@ footer {
 		flex-direction: column;
 	}
 
-	#contact {
+	.contact-container {
 		grid-template-columns: repeat(2, auto);
-		padding: 3rem 10rem;
+		padding: 3rem 5rem;
 		gap: 2rem;
 	}
 }
@@ -532,8 +546,8 @@ footer {
 		text-align: center;
 	}
 
-	#about,
-	#contact,
+	.about-container,
+	.contact-container,
 	.project-cards {
 		grid-template-columns: 1fr;
 	}
@@ -584,8 +598,10 @@ footer {
 	}
 
 	.hero {
-		padding: 10rem 2rem;
-		min-height: auto;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 10rem 5rem;
+		min-height: 100vh;
 	}
 
 	.hero-title {
@@ -610,7 +626,7 @@ footer {
 	}
 
 	#skills {
-		padding: 3rem 3rem;
+		padding: 3rem 5rem;
 		background: none;
 	}
 
@@ -630,11 +646,6 @@ footer {
 
 	.project-buttons {
 		flex-direction: column;
-	}
-
-	#contact {
-		padding: 3rem;
-		gap: 2rem;
 	}
 }
 
