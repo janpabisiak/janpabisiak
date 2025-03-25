@@ -1,6 +1,6 @@
 <h1 align="center">Hi there 👋, I'm Jan</h1> 
 
-<h3 align="center">A passionate software developer from Poland 🇵🇱</h3>
+<h3 align="center">A passionate full-stack developer from Poland 🇵🇱</h3>
 
 <div align="center">
  
@@ -9,8 +9,6 @@
 🔭 Despite coding, I'm also keen on non-fiction books, educational podcasts, electronic music, and bicycle touring 
 
 📚 Favorite books: The Innovators by Walter Isaacson, Homo Deus by Yuval Noah Harari
-
-📫 My Discord: pabinsky
 
  </div>
 
