@@ -52,7 +52,7 @@ toggleButton.addEventListener('click', (e) => {
 	navbar.classList.toggle('active');
 });
 
-window.innerWidth <= 768 ? navbarLinks[navbarLinks.length - 1].classList.remove('btn') : '';
+window.innerWidth <= 870 ? navbarLinks[navbarLinks.length - 1].classList.remove('btn') : '';
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry, i) => {
