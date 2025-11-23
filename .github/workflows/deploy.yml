@@ -22,7 +22,7 @@ jobs:
       with:
         path: ./dist
 
-deploy:
+  deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
