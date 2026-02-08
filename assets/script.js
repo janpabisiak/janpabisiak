@@ -1,60 +1,55 @@
 'use strict';
 
-const toggleButton = document.querySelector('.toggle-button');
-const navbar = document.querySelector('.navbar-links');
-const navbarLinks = document.querySelectorAll('.navbar-links ul li a');
-const percOfScrolledElm = document.querySelector('.percOfScrolled');
+const loadingEl = document.querySelector('.loading');
+const hamburgerEl = document.querySelector('.hamburger');
+const navbarEl = document.querySelector('.navbar__links');
+const navbarLinksEls = document.querySelectorAll('.navbar__links ul li a');
+const heroSectionBackgroundEl = getComputedStyle(document.querySelector('#hero'), ':before').getPropertyValue('content');
+const skillItemsEls = document.querySelectorAll('.skills__list__item');
+
+const year = new Date().getFullYear();
 const sectionPositions = [-999];
 let headerHeight;
 let fullScroll;
 let currentScroll;
-let percOfScrolled;
+let percentageScrolled;
+
+window.innerWidth <= 870 ? navbarLinksEls[navbarLinksEls.length - 1].classList.remove('btn') : '';
+
+const displayPage = () => {
+	const sectionIds = ['header', 'hero', 'about', 'skills', 'projects', 'contact', 'footer'];
+
+	sectionIds.forEach((section) => {
+		document.querySelector(`#${section}`).classList.remove('hidden');
+	});
+
+	loadingEl.classList.add('hidden');
+};
+
+const updatePercentageScrolled = () => {
+	const percentageScrolledEl = document.querySelector('.percentage-scrolled');
+
+	currentScroll = Math.round(window.scrollY);
+	setActiveNavBarLink();
+
+	percentageScrolled = (currentScroll / fullScroll) * 100;
+	percentageScrolledEl.style.width = `${percentageScrolled}%`;
+};
 
 const setActiveNavBarLink = () => {
 	let currentSection;
+
 	for (let i = 1; i < sectionPositions.length; i++) {
 		if (sectionPositions[i - 1] < currentScroll && currentScroll < sectionPositions[i]) currentSection = i - 1;
 		else if (currentScroll > sectionPositions[i]) currentSection = i;
 	}
-	navbarLinks.forEach((link, i) => {
+	navbarLinksEls.forEach((link, i) => {
 		if (currentSection === i) link.classList.add('active');
 		else link.classList.remove('active');
 	});
 };
 
-window.onload = () => {
-	document.querySelector('.loading-container').classList.add('hidden');
-	document.querySelector('header').classList.remove('hidden');
-	document.querySelector('#home').classList.remove('hidden');
-	document.querySelector('#about').classList.remove('hidden');
-	document.querySelector('#skills').classList.remove('hidden');
-	document.querySelector('#projects').classList.remove('hidden');
-	document.querySelector('#contact').classList.remove('hidden');
-	document.querySelector('footer').classList.remove('hidden');
-	fullScroll = Math.round(document.documentElement.scrollHeight - document.documentElement.clientHeight);
-	headerHeight = document.querySelector('header').offsetHeight;
-	document.querySelectorAll('.section-title').forEach((section) => {
-		sectionPositions.push(section.offsetTop - headerHeight);
-	});
-	sectionPositions[4] = sectionPositions[4] - window.innerHeight;
-};
-
-document.addEventListener('scroll', () => {
-	currentScroll = Math.round(window.scrollY);
-	setActiveNavBarLink();
-
-	percOfScrolled = (currentScroll / fullScroll) * 100;
-	percOfScrolledElm.style.width = `${percOfScrolled}%`;
-});
-
-toggleButton.addEventListener('click', (e) => {
-	e.preventDefault();
-	navbar.classList.toggle('active');
-});
-
-window.innerWidth <= 870 ? navbarLinks[navbarLinks.length - 1].classList.remove('btn') : '';
-
-const observer = new IntersectionObserver((entries) => {
+const skillItemsObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry, i) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add('appear');
@@ -63,10 +58,29 @@ const observer = new IntersectionObserver((entries) => {
 	});
 });
 
-document.querySelectorAll('.skills .skill-badge').forEach((el) => {
-	observer.observe(el);
+window.onload = () => {
+	Promise.all([...document.images].map((img) => (img.decode ? img.decode().catch(() => {}) : Promise.resolve()))).then(() => {
+		displayPage();
+
+		fullScroll = Math.round(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+		headerHeight = document.querySelector('header').offsetHeight;
+		document.querySelectorAll('.section-title').forEach((section) => {
+			sectionPositions.push(section.offsetTop - headerHeight);
+		});
+		sectionPositions[4] = sectionPositions[4] - window.innerHeight;
+	});
+};
+
+hamburgerEl.addEventListener('click', (e) => {
+	e.preventDefault();
+	navbarEl.classList.toggle('active');
 });
 
-const year = new Date().getFullYear();
+document.addEventListener('scroll', updatePercentageScrolled);
+
+skillItemsEls.forEach((el) => {
+	skillItemsObserver.observe(el);
+});
+
 document.querySelector('.age').textContent = year - 2004;
 document.querySelector('.year').textContent = year;
