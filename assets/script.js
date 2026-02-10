@@ -1,4 +1,4 @@
-'use strict';
+('use strict');
 
 const loadingEl = document.querySelector('.loading');
 const hamburgerEl = document.querySelector('.hamburger');
@@ -14,7 +14,7 @@ let fullScroll;
 let currentScroll;
 let percentageScrolled;
 
-const displayPage = () => {
+function displayPage() {
 	const sectionIds = ['header', 'hero', 'about', 'skills', 'projects', 'contact', 'footer'];
 
 	sectionIds.forEach((section) => {
@@ -22,9 +22,9 @@ const displayPage = () => {
 	});
 
 	loadingEl.classList.add('hidden');
-};
+}
 
-const updatePercentageScrolled = () => {
+function updatePercentageScrolled() {
 	const percentageScrolledEl = document.querySelector('.percentage-scrolled');
 
 	currentScroll = Math.round(window.scrollY);
@@ -32,9 +32,9 @@ const updatePercentageScrolled = () => {
 
 	percentageScrolled = (currentScroll / fullScroll) * 100;
 	percentageScrolledEl.style.width = `${percentageScrolled}%`;
-};
+}
 
-const setActiveNavBarLink = () => {
+function setActiveNavBarLink() {
 	let currentSection;
 
 	for (let i = 1; i < sectionPositions.length; i++) {
@@ -45,28 +45,47 @@ const setActiveNavBarLink = () => {
 		if (currentSection === i) link.classList.add('active');
 		else link.classList.remove('active');
 	});
-};
+}
 
-const scrollImage = (imgEl, scrollUp, animationDuration, altImgPrefix) => {
+function scrollImage(imgEl, scrollUp, animationDuration, altImgPrefix) {
 	if (window.innerWidth <= 1300) return;
 
 	const { height } = imgEl.getBoundingClientRect();
+	const imageSource = new URL(`/images/${altImgPrefix}-full.webp`, window.location.origin).href;
 
 	if (scrollUp) {
-		imgEl.style.height = `${height}px`;
-		imgEl.style.objectFit = 'cover';
-		imgEl.src = `./assets/images/projects/${altImgPrefix}-full.webp`;
-		imgEl.style.objectPosition = 'center top';
-		imgEl.offsetHeight;
-		imgEl.style.transition = `object-position ${animationDuration}s linear`;
-		imgEl.style.objectPosition = 'center bottom';
+		const image = new Image();
+		image.src = imageSource;
+
+		image.onload = () => {
+			imgEl.src = imageSource;
+			imgEl.style.height = `${height}px`;
+			imgEl.style.objectFit = 'cover';
+			imgEl.style.objectPosition = 'center top';
+			imgEl.offsetHeight;
+			imgEl.style.transition = `object-position ${animationDuration}s linear`;
+			imgEl.style.objectPosition = 'center bottom';
+		};
 	} else {
 		imgEl.style.objectPosition = 'center bottom';
 		imgEl.offsetHeight;
 		imgEl.style.transition = `object-position ${animationDuration}s linear`;
 		imgEl.style.objectPosition = 'center top';
 	}
-};
+}
+
+function initProjectImagesHover() {
+	const images = document.querySelectorAll('.project__image[scrollable] img');
+
+	images.forEach((img) => {
+		const prefix = img.getAttribute('altImgPrefix');
+		const durationIn = +img.getAttribute('animationDurationMouseEnter') || 2;
+		const durationOut = +img.getAttribute('animationDurationMouseLeave') || 1;
+
+		img.addEventListener('mouseenter', () => scrollImage(img, true, durationIn, prefix));
+		img.addEventListener('mouseleave', () => scrollImage(img, false, durationOut, prefix));
+	});
+}
 
 const skillItemsObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry, i) => {
@@ -85,6 +104,7 @@ const moveLeftObserver = new IntersectionObserver((entries) => {
 
 window.onload = () => {
 	displayPage();
+	initProjectImagesHover();
 
 	fullScroll = Math.round(document.documentElement.scrollHeight - document.documentElement.clientHeight);
 	headerHeight = document.querySelector('header').offsetHeight;
